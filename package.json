@@ -1,0 +1,37 @@
+{
+  "name": "Model-Demo",
+  "version": "0.0.2",
+  "description": "Demo",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.0.0",
+    "ejs": "~0.8.5",
+    "mongoose": "~3.8.1",
+    "passport": "~0.1.17",
+    "passport-local": "~0.1.6",
+    "passport-facebook": "~1.0.2",
+    "passport-twitter": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "connect-flash": "~0.1.1",
+    "bcrypt-nodejs": "latest",
+    "morgan": "~1.0.0",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.0",
+    "method-override": "~1.0.0",
+    "express-session": "~1.0.0"
+  },
+  "devDependencies": {
+    "angular-resource": "^1.3.15",
+    "angular-route": "^1.3.15",
+    "toastr": "^2.0.4",
+    "jquery": "^2.1.3",
+    "ejs": "^0.8.8",
+    "bootstrap": "^3.3.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start server.js"
+  },
+  "author": "Zaki",
+  "license": "MIT"
+}

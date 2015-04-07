@@ -1,0 +1,48 @@
+{
+  "name": "toastr",
+  "filename": "js/toastr.min.js",
+  "main": "toastr.js",
+  "version": "2.0.4",
+  "description": "ToastrJS is a JavaScript library for Gnome / Growl type non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.",
+  "homepage": "http://www.toastrjs.com",
+  "keywords": [
+    "Toastr",
+    "ToastrJS",
+    "toastr.js"
+  ],
+  "maintainers": [
+    {
+      "name": "John Papa",
+      "url": "http://www.johnpapa.net"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CodeSeven/toastr.git"
+  },
+  "bugs": {
+    "url": "http://stackoverflow.com/questions/tagged/toastr"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "devDependencies": {
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-less": "~0.6.4",
+    "grunt-contrib-qunit": "~0.2.2"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "readme": "# toastr\n**toastr** is a Javascript library for non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.\n\n## Current Version\n2.0.3\n\n## Demo\n- Demo can be found at http://codeseven.github.io/toastr/demo.html\n- [Demo using FontAwesome icons with toastr](http://plnkr.co/edit/6W9URNyyp2ItO4aUWzBB?p=preview)\n\n## CDNjs\nToastr is hosted at CDN JS\n\n#### Debug\n- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.js)\n- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.css)\n\n#### Minified\n- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js) \n- [//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css](//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css)\n\n## NuGet Gallery\nhttp://nuget.org/packages/toastr\n\n## [Bower](http://bower.io/)\n\t\tbower install toastr\n\n\n## Wiki and Change Log\n[Wiki including Change Log](https://github.com/CodeSeven/toastr/wiki)\n\n## Breaking Changes\n \n####Animation Changes\nThe following animations options have been deprecated and should be replaced:\n \n - Replace `options.fadeIn` with `options.showDuration`\n - Replace `options.onFadeIn` with `options.onShown`\n - Replace `options.fadeOut` with `options.hideDuration`\n - Replace `options.onFadeOut` with `options.onHidden`\n\n## Quick start\n\n###3 Easy Steps\nFor other API calls, see the [demo](http://codeseven.github.io/toastr/demo.html).\n\n1. Link to toastr.css `<link href=\"toastr.css\" rel=\"stylesheet\"/>`\n\n2. Link to toastr.js `<script src=\"toastr.js\"></script>`\n\n3. use toastr to display a toast for info, success, warning or error\n\n\t\t// Display an info toast with no title\n\t\ttoastr.info('Are you the 6 fingered man?')\n\n### Other Options\n\t// Display a warning toast, with no title\n\ttoastr.warning('My name is Inigo Montoya. You killed my father, prepare to die!')\n\t\n\t// Display a success toast, with a title\n\ttoastr.success('Have fun storming the castle!', 'Miracle Max Says')\n\t\n\t// Display an error toast, with a title\n\ttoastr.error('I do not think that word means what you think it means.', 'Inconceivable!')\n\t\t\n\t// Clears the current list of toasts\n\ttoastr.clear()\n\n### Close Button\nOptionally enable a close button\n\n    toastr.options.closeButton = true;\n\nOptionally override the close button's HTML. \n\n    toastr.options.closeHtml = '<button><i class=\"icon-off\"></i></button>';\n\nYou can also override the CSS/LESS for `#toast-container .toast-close-button`\n\n### Display Sequence\nShow newest toast at bottom (top is default)\n\n\ttoastr.options.newestOnTop = false;\n\n### Callbacks\n\t// Define a callback for when the toast is shown/hidden\n\ttoastr.options.onShown = function() { console.log('hello'); }\n\ttoastr.options.onHidden = function() { console.log('goodbye'); }\n\n### Animation Options\nToastr will supply default animations, so you do not have to provide any of these settings. However you have the option to override the animations if you like.\n\n####Easings\nOptionally override the animation easing to show or hide the toasts. Default is swing. swing and linear are built into jQuery.\n\n\ttoastr.options.showEasing = 'swing';\n\ttoastr.options.hideEasing = 'linear';\n\nUsing the jQuery Easing plugin (http://www.gsgd.co.uk/sandbox/jquery/easing/)\n\n\ttoastr.options.showEasing = 'easeOutBounce';\n\ttoastr.options.hideEasing = 'easeInBack';\n\n####Animation Method\nUse the jQuery show/hide method of your choice. These default to fadeIn/fadeOut. The methods fadeIn/fadeOut, slideDown/slideUp, and show/hide are built into jQuery.\n\n\ttoastr.options.showMethod = 'slideDown'; \n\ttoastr.options.hideMethod = 'slideUp'; \n\n## Building Toastr\n\nTo build the minified and css versions of Toastr you will need [node](http://nodejs.org) installed.\n\nInstall the [Grunt](http://gruntjs.com/) command line. This might require `sudo`.\n\n```shell\nnpm install -g grunt-cli\n```\n\nThen, from the main project folder run this command. This should not require `sudo`.\n\n```shell\nnpm install\n```\n\nAt this point the dependencies have been installed and you can build Toastr\n\n```shell\ngrunt\n```\n\n## Authors\n**Hans Fjällemark**\n\n+ http://twitter.com/hfjallemark\n\n**John Papa**\n\n+ http://twitter.com/John_Papa\n\n## Credits\nInspired by https://github.com/Srirangan/notifer.js/.\n\n\n## Copyright\nCopyright © 2012-2014 [Hans Fjällemark](http://twitter.com/hfjallemark) & [John Papa](http://twitter.com/John_Papa).\n\n## License \ntoastr is under MIT license - http://www.opensource.org/licenses/mit-license.php\n",
+  "readmeFilename": "README.md",
+  "_id": "toastr@2.0.4",
+  "dist": {
+    "shasum": "99315290c3a38b9dbdbae00c28b1ce098f9cff7a"
+  },
+  "_from": "toastr@",
+  "_resolved": "https://registry.npmjs.org/toastr/-/toastr-2.0.4.tgz"
+}
