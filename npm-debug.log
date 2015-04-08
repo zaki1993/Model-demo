@@ -1,0 +1,58 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/zaki1993/Model-demo.git' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json Model-Demo@0.0.2 No repository field.
+6 warn package.json Model-Demo@0.0.2 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'https://github.com/zaki1993/Model-demo.git', null ]
+9 verbose cache add name=undefined spec="https://github.com/zaki1993/Model-demo.git" args=["https://github.com/zaki1993/Model-demo.git",null]
+10 verbose parsed url { protocol: 'https:',
+10 verbose parsed url   slashes: true,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: 'github.com',
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: 'github.com',
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: '/zaki1993/Model-demo.git',
+10 verbose parsed url   path: '/zaki1993/Model-demo.git',
+10 verbose parsed url   href: 'https://github.com/zaki1993/Model-demo.git' }
+11 silly lockFile e14454f0-thub-com-zaki1993-Model-demo-git https://github.com/zaki1993/Model-demo.git
+12 verbose lock https://github.com/zaki1993/Model-demo.git C:\Documents and Settings\zaki\Application Data\npm-cache\e14454f0-thub-com-zaki1993-Model-demo-git.lock
+13 verbose addRemoteTarball [ 'https://github.com/zaki1993/Model-demo.git', null ]
+14 info retry fetch attempt 1 at 19:50:50
+15 verbose fetch to= C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+16 http GET https://github.com/zaki1993/Model-demo.git
+17 http 200 https://github.com/zaki1993/Model-demo.git
+18 verbose tar unpack C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+19 silly lockFile 120c7917-0528-0-24283639434725046-package tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package
+20 verbose lock tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package C:\Documents and Settings\zaki\Application Data\npm-cache\120c7917-0528-0-24283639434725046-package.lock
+21 silly lockFile 8f72ea07-0528-0-24283639434725046-tmp-tgz tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+22 verbose lock tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz C:\Documents and Settings\zaki\Application Data\npm-cache\8f72ea07-0528-0-24283639434725046-tmp-tgz.lock
+23 silly gunzTarPerm modes [ '755', '644' ]
+24 error not a package C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+25 silly lockFile 120c7917-0528-0-24283639434725046-package tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package
+26 silly lockFile 120c7917-0528-0-24283639434725046-package tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package
+27 silly lockFile 8f72ea07-0528-0-24283639434725046-tmp-tgz tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+28 silly lockFile 8f72ea07-0528-0-24283639434725046-tmp-tgz tar://C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\tmp.tgz
+29 silly lockFile e14454f0-thub-com-zaki1993-Model-demo-git https://github.com/zaki1993/Model-demo.git
+30 silly lockFile e14454f0-thub-com-zaki1993-Model-demo-git https://github.com/zaki1993/Model-demo.git
+31 error Error: ENOENT, open 'C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package\package.json'
+32 error If you need help, you may report this *entire* log,
+32 error including the npm and node versions, at:
+32 error     <http://github.com/npm/npm/issues>
+33 error System Windows_NT 5.1.2600
+34 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "https://github.com/zaki1993/Model-demo.git"
+35 error cwd D:\Zdravko\Model-Demo
+36 error node -v v0.10.26
+37 error npm -v 1.4.3
+38 error path C:\DOCUME~1\zaki\LOCALS~1\Temp\npm-4140-ien2mnSR\1428511850528-0.24283639434725046\package\package.json
+39 error code ENOENT
+40 error errno 34
+41 verbose exit [ 34, true ]
